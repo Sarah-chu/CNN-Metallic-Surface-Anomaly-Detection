@@ -27,7 +27,7 @@ For optimizer, we used Adam Optimizer which is a combination of the ‘gradient 
 We achieved **95% accuracy** of detection by using 70% of total number of images (i.e. 1260 images) to train the convolutional neural networks and using the rest 30% of images (i.e. 540 images) for testing.  
 
 ## Limitation & Possible Improvement : 
-![inclusions](./inclusion.png)    ![pittedSurface](./PS_68.bmp)  
-Left : Inclusions                Right : Pitted Surface  
+![inclusions](./inclusion.png)        Left : Inclusions             ![pittedSurface](./PS_68.bmp)    Right : Pitted Surface  
+                      
 
 Some images of **inclusions** were classified as pitted surface by the neural network. For pitted surface, we can see many small dots on the surface. The neural network may get confused as the image above shows many noises(dark dots). But the neural network should have recognised the feature of inclusions, i.e. the black lines.
