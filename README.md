@@ -1,6 +1,6 @@
 # Detection of Defects on Metallic Surfaces with Convolutional Neural Networks with Pytorch
 
-![test](../Fig.jepg)
+
 ## Possible Business Use Cases
 This neural network can be applied to the **iron and steel industry** or **machine manufacturers** as it can help to identify defects on the surface of a metal part produced by a casting process.  
 
@@ -15,6 +15,7 @@ For each category, 300 samples can be found in the folder.
 
 For each image, the original resolution is 200×200 pixels.  
 
+![example](./Fig.jpg)
 This Metal Surface Defects Dataset can be download at [Kaggle](https://www.kaggle.com/fantacher/neu-metal-surface-defects-data) or [Northeastern University (NEU)](http://faculty.neu.edu.cn/yunhyan/NEU_surface_defect_database.html) official website. If you use the official website for downloads, please use [NEU-CLS](https://drive.google.com/file/d/1NGlXT9sIaQpyxUoT6MLKm1Pr6x8oxOvc/view) for this image classification task.  
    
 ## Methodology & Result :   
@@ -26,5 +27,7 @@ For optimizer, we used Adam Optimizer which is a combination of the ‘gradient 
 We achieved **95% accuracy** of detection by using 70% of total number of images (i.e. 1260 images) to train the convolutional neural networks and using the rest 30% of images (i.e. 540 images) for testing.  
 
 ## Limitation & Possible Improvement : 
-![Tux, the Linux mascot](/Desktop/inclusion.png)
+![inclusions](./inclusion.png)    ![pittedSurface](./PS_68.bmp)  
+Left : Inclusions                Right : Pitted Surface  
+
 Some images of **inclusions** were classified as pitted surface by the neural network. For pitted surface, we can see many small dots on the surface. The neural network may get confused as the image above shows many noises(dark dots). But the neural network should have recognised the feature of inclusions, i.e. the black lines.
