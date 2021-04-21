@@ -20,8 +20,8 @@ This Metal Surface Defects Dataset can be download at [Kaggle](https://www.kaggl
    
 ## Methodology & Result :   
  
-The convolutional neural network consists of 3 convolutional layers and 3 dense layers, and applies rectified linear on each convolutional layers with max pooling over 3x3 pixels.  
-For optimizer, we used Adam Optimizer which is a combination of the ‘gradient descent with momentum’ algorithm and the ‘RMSP’ algorithm. For Momentum part, it takes the ‘exponentially weighted average’ of the gradients into account which helps the algorithm to reach the minima faster. For Adaptive Learning Rate part, the learning rate is adjusted in the training phase by reducing the learning rate to a pre-defined schedule using ‘exponential moving average’. For loss function, we used mean squared error as because the tagets are one-hot vectors.
+The convolutional neural network consists of 3 convolutional layers and 3 dense layers, and applies rectified linear units(ReLU) on each convolutional layers with max pooling over 3x3 pixels.  
+For optimizer, we used Adam Optimizer which is a combination of the ‘gradient descent with momentum’ algorithm and the ‘RMSP’ algorithm. For Momentum part, it takes the ‘exponentially weighted average’ of the gradients into account which helps the algorithm to reach the minima faster. For Adaptive Learning Rate part, the learning rate is adjusted in the training phase by reducing the learning rate to a pre-defined schedule using ‘exponential moving average’. For loss function, we used mean squared error as because the targets are one-hot vectors.
 
 
 We achieved **95% accuracy** of detection by using 70% of total number of images (i.e. 1260 images) to train the convolutional neural networks and using the rest 30% of images (i.e. 540 images) for testing.  
